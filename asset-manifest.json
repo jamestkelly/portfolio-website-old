@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/jamestkelly/portfolio-website.git/static/css/main.8f0fb051.chunk.css",
+    "main.js": "/jamestkelly/portfolio-website.git/static/js/main.0df02a7a.chunk.js",
+    "main.js.map": "/jamestkelly/portfolio-website.git/static/js/main.0df02a7a.chunk.js.map",
+    "runtime-main.js": "/jamestkelly/portfolio-website.git/static/js/runtime-main.de998c9a.js",
+    "runtime-main.js.map": "/jamestkelly/portfolio-website.git/static/js/runtime-main.de998c9a.js.map",
+    "static/css/2.658248ec.chunk.css": "/jamestkelly/portfolio-website.git/static/css/2.658248ec.chunk.css",
+    "static/js/2.4788a6ce.chunk.js": "/jamestkelly/portfolio-website.git/static/js/2.4788a6ce.chunk.js",
+    "static/js/2.4788a6ce.chunk.js.map": "/jamestkelly/portfolio-website.git/static/js/2.4788a6ce.chunk.js.map",
+    "static/js/3.4269fe86.chunk.js": "/jamestkelly/portfolio-website.git/static/js/3.4269fe86.chunk.js",
+    "static/js/3.4269fe86.chunk.js.map": "/jamestkelly/portfolio-website.git/static/js/3.4269fe86.chunk.js.map",
+    "index.html": "/jamestkelly/portfolio-website.git/index.html",
+    "static/css/2.658248ec.chunk.css.map": "/jamestkelly/portfolio-website.git/static/css/2.658248ec.chunk.css.map",
+    "static/css/main.8f0fb051.chunk.css.map": "/jamestkelly/portfolio-website.git/static/css/main.8f0fb051.chunk.css.map",
+    "static/js/2.4788a6ce.chunk.js.LICENSE.txt": "/jamestkelly/portfolio-website.git/static/js/2.4788a6ce.chunk.js.LICENSE.txt",
+    "static/media/programming.37e26f5c.mp4": "/jamestkelly/portfolio-website.git/static/media/programming.37e26f5c.mp4",
+    "static/media/programming.6769bdab.webm": "/jamestkelly/portfolio-website.git/static/media/programming.6769bdab.webm"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.de998c9a.js",
+    "static/css/2.658248ec.chunk.css",
+    "static/js/2.4788a6ce.chunk.js",
+    "static/css/main.8f0fb051.chunk.css",
+    "static/js/main.0df02a7a.chunk.js"
+  ]
+}
