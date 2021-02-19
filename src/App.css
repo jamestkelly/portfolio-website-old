@@ -1,0 +1,76 @@
+/*
+ * 'create-react-app' default CSS styling options
+ */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.landing-left-column {
+  background-color: #FEE12B;
+  color: #000000;
+}
+
+.landing-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.video-container {
+  position: relative;
+  min-height: 300px;
+  max-height: 800px;
+  overflow: hidden;
+  margin-bottom: 500px;
+}
+
+.parent-element-to-video {
+  position: relative; /* or absolute or fixed */
+}
+video {
+  position: absolute;
+  left: 50%; /* % of surrounding element */
+  top: 50%;
+  transform: translate(-50%, -50%); /* % of current element */
+}
+
+@media (min-width: 576px) {
+  .jumbotron {
+    padding-bottom: 0;
+  }
+}
