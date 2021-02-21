@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Axios from 'axios';
+import 'firebase/database';
 
 class ContactPage extends React.Component {
     constructor(props) {
@@ -31,15 +32,16 @@ class ContactPage extends React.Component {
         });
     }
 
-    // Method to handle submission of email message
     handleSubmit = (event) => {
         event.preventDefault();
+
+        console.log(event);
 
         this.setState({
             disabled: true
         });
 
-        Axios.post('http://localhost:3030/api/email', this.state)
+        Axios.post('https://us-central1-portfolio-website-76885.cloudfunctions.net/emailSender', this.state)
             .then(res => {
                 if (res.data.success) {
                     this.setState({
