@@ -15,6 +15,7 @@ The API keys can sensitive data have been hidden using dotenv alongside Firebase
 This project has been created with:
 
 * bootstrap: ^4.6.0
+* cors: ^2.8.5
 * React: ^16.14.0
 * Node: 14.15.5
 * npm: 6.14.11
