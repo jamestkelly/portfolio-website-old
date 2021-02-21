@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react'
+import { Axios, db } from '../firebase/firebaseConfig'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import Axios from 'axios';
 import 'firebase/database';
 
 class ContactPage extends React.Component {
@@ -41,27 +41,37 @@ class ContactPage extends React.Component {
             disabled: true
         });
 
-        Axios.post('https://us-central1-portfolio-website-76885.cloudfunctions.net/emailSender', this.state)
+        this.sendEmail();
+        this.state.name = "";
+        this.state.email = "";
+        this.state.message = "";
+    }
+
+    sendEmail = () => {
+        Axios.post(
+            'https://us-central1-portfolio-website-76885.cloudfunctions.net/submit',
+            this.state
+          )
             .then(res => {
-                if (res.data.success) {
-                    this.setState({
-                        disabled: false,
-                        emailSent: true
-                    });
-                }
-                else {
-                    this.setState({
-                        disabled: false,
-                        emailSent: false
-                    });
-                }
-            })
-            .catch(err => {
+                console.log(res);
                 this.setState({
                     disabled: false,
-                    emailSent: false
+                    emailSent: true
                 });
+                db.collection('emails').add({
+                    name: this.state.name,
+                    email: this.state.email,
+                    message: this.state.message,
+                    time: new Date(),
+                })
+            })
+            .catch(error => {
+              console.log(error)
+              this.setState({
+                disabled: false,
+                emailSent: false
             });
+        })
     }
 
     render() {

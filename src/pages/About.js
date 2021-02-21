@@ -32,6 +32,7 @@ function AboutPage(props) {
                             My personal development as an aspiring full stack developer has also led me to gain
                             experience in a variety of other programming concepts and languages. You can see those{' '}
                             <a href = "https://github.com/jamestkelly/resume/blob/main/main.pdf">here</a>, alongside the projects I'm working on in my resume!
+                            There's more I've worked on but those are private, just send me an email if you'd like to see them.
                         </p>
                         <p>
                             Another place to check out what I'm doing is my{' '}
