@@ -1,3 +1,4 @@
+// Define required imports for application
 const functions = require('firebase-functions')
 const nodemailer = require('nodemailer')
 const cors = require('cors')({
@@ -27,10 +28,11 @@ exports.submit = functions.https.onRequest((req, res) => {
         return
       }
 
+      // Define mailing options for email
       const mailOptions = {
         from: req.body.email,
         replyTo: req.body.email,
-        to: 'jimkelly.t@outlook.com',
+        to: 'jimkelly.t@outlook.com', // Email address to be sent to.
         subject: `New Contact from Portfolio Website: ${req.body.name}`,
         text: req.body.message,
         html: `<p>${req.body.message}</p>`,

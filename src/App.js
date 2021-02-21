@@ -38,7 +38,9 @@ class App extends React.Component {
       },
     }
   }
+
   render() {
+
     return (
       <Router>
         <Container className = "p-0" fluid = { true }>

@@ -1,3 +1,4 @@
+// Import React Components
 import React, { useState } from 'react'
 import { Axios, db } from '../firebase/firebaseConfig'
 import Container from 'react-bootstrap/Container';
@@ -5,7 +6,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import 'firebase/database';
 
 class ContactPage extends React.Component {
     constructor(props) {
@@ -32,6 +32,7 @@ class ContactPage extends React.Component {
         });
     }
 
+    // Method to handle submission of form on contact page
     handleSubmit = (event) => {
         event.preventDefault();
 
@@ -47,6 +48,7 @@ class ContactPage extends React.Component {
         this.state.message = "";
     }
 
+    // Method to transmit data entered to contact page to email processing API
     sendEmail = () => {
         Axios.post(
             'https://us-central1-portfolio-website-76885.cloudfunctions.net/submit',
