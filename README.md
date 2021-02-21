@@ -2,7 +2,7 @@
 Simple and modern portfolio website made by Jim Kelly with React Native utilising Firebase Hosting & Functions.
 
 ## Table of Contents
-* 	[General Info] (#general-info)
+* 	[General Info](#general-info)
 *  [Technology Used](#technology-used)
 * 	[Setup](#setup)
 
