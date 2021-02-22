@@ -2,11 +2,11 @@
 Simple and modern portfolio website made by Jim Kelly with React Native utilising Firebase Hosting & Functions.
 
 ## Table of Contents
-* 	[General Info](#general-info)
+* 	[General Information](#general-information)
 *  [Technology Used](#technology-used)
 * 	[Setup](#setup)
 
-## General Info
+## General Information
 This project contains the current form of my portfolio website, containing a home, about, and contact page as hosted on Firebase [here](https://portfolio-website-76885.web.app). The project makes use of Firebase Functions to deploy a basic API that sends data filled out on the 'Contact Me' page to my personal email address. This data is also stored in Firebase's 'firestore' for posterity in the event that maybe an email does not go through, or if on the user end the email is accidentally deleted.
 
 The API keys can sensitive data have been hidden using dotenv alongside Firebase's config capacities. In its current state, while there is still room for further development on the website, i.e. a custom domain, further design improvements and the addition of animations to actions; the website is representative of my current portfolio.
