@@ -1,5 +1,5 @@
-# portfolio-website
-Simple and modern portfolio website made by Jim Kelly with React Native utilising Firebase Hosting & Functions.
+# portfolio-website-old
+Simple and modern portfolio website made by Jim Kelly with React Native utilising Firebase Hosting & Functions. This is an old build of my personal portfolio website and was replaced in March, 2022.
 
 ## Table of Contents
 * 	[General Information](#general-information)
